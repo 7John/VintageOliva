@@ -1018,6 +1018,9 @@ nav > ul > li > a:hover {
 		align-items: center;
 		justify-content: center;
 	}
+	.nav__bullet {
+		display: none;
+	}
 	.nav__logo {
 		order: -1;
 		width: 100%;
