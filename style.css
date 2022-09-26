@@ -987,21 +987,27 @@ nav > ul > li > a:hover {
 		transform: translateX(100vw);
 		transition: .2s transform linear;
 	}
+	.nav--min {
+		background: transparent;
+	}
 	.nav-show {
 		transform: translateX(0);
 	}
 	.nav > ul {
 		width: 100%;
-		height: 30vh;
+		height: 100vh;
 		padding: 0;
 		flex-direction: column;
 		flex-wrap: wrap;
 		align-items: center;
 		justify-content: space-evenly;
 	}
-	.nav > ul > li {
-		width: 49%;
-		height: 49%;
+	.nav__about,
+	.nav__work,
+	.nav__shop,
+	.nav__contact {
+		width: 99%;
+		height: 7%;
 		background-color: #000000cc;
 	}
 	.nav > ul > li > a {
@@ -1013,6 +1019,8 @@ nav > ul > li > a:hover {
 		justify-content: center;
 	}
 	.nav__logo {
+		order: -1;
+		width: 100%;
 		height: 70vh;
 		display: flex;
 		justify-content: center;
