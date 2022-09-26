@@ -1,20 +1,5 @@
 let l = console.log;
 
-// navCange
-let navChange = () => {
-	let _ul = document.querySelector('.nav ul');
-	let _logo = document.querySelector('.nav__logo');
-	let _nav__bullet = document.querySelectorAll('.nav__bullet');
-
-	if (window.innerWidth <= 481) {
-		_ul.insertAdjacentElement("beforebegin", _logo);
-		for(b of _nav__bullet) {
-			b.remove();
-		}
-	}
-}
-navChange();
-
 // navSwipe
 let navSwipe = () => {
 	document.addEventListener("touchstart", startHandler, false);
