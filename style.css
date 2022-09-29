@@ -626,7 +626,7 @@ nav > ul > li > a:hover {
 }
 
 .footer__social {
-	margin-left: -130px;
+	margin-left: -126px;
 	width: 138px;
 	display: flex;
 	align-items: center;
@@ -682,10 +682,52 @@ nav > ul > li > a:hover {
 
 
 
-
-
-
 /* ..................RESPONSIVE.................. */
+
+@media screen and (min-width: 1440px) {
+	.grid01 img {
+		height: 125%;
+		object-fit: cover;
+	}
+	.grid01 .grid01__img01, .grid01 .grid01__img02, .grid01 .grid01__img03, .grid01 .grid01__img04, .grid01 .grid01__img07, .grid01 .grid01__img08 {
+		height: 125%;
+	}
+}
+
+@media screen and (max-width: 1440px) {
+	.item1{
+		order: 1;
+	}
+	.item2 {
+		order: 3;
+	}
+	.item3 {
+		order: 4;
+	}
+	.item4 {
+		order: 7;
+	}
+	.item5 {
+		order: 6;
+	}
+	.item6 {
+		order: 5;
+	}
+	.item7 {
+		order: 2;
+	}
+	.item2__icon, .item3__icon, .item6__icon {
+	  margin-top: 16px;
+	  margin-bottom: 17px;
+	  text-align: center;
+	}
+	.item2__title {
+		font-size: 16px;
+	}
+	.item2__text, .item3__text, .item6__text {
+		padding: 0 12px;
+	}
+}
 
 @media screen and (max-width: 960px) {
 	.nav {
@@ -730,7 +772,20 @@ nav > ul > li > a:hover {
 	.grid .item5__logo {
 		width: 70%;
 	}
+	.item1{
+		order: 1;
+	}
+	.item3 {
+		order: 3;
+	}
+	.item5 {
+		order: 5;
+	}
+	.item7 {
+		order: 6;
+	}
 	.item2 {
+		order: 2;
 		width: 50%;
 	}
 	.item3,
@@ -739,9 +794,11 @@ nav > ul > li > a:hover {
 		width: 50%;
 	}
 	.item6 {
+		order: 7;
 		width: 100%;
 	}
 	.item4 {
+		order: 4;
 		width: 100%;
 	}
 	.item2__image,
@@ -904,9 +961,6 @@ nav > ul > li > a:hover {
 .footer__inner {
 	padding: 70px 0;
 }
-.footer__social {
-	margin-left: 0;
-}
 }   
 
 @media screen and (max-width: 800px) {
@@ -946,6 +1000,9 @@ nav > ul > li > a:hover {
 	.grid01__item08 {
 		grid-area: 4/3/5/4;
 	}
+	.footer__social {
+		margin: 0 auto;
+	}
 
 /* GRID01.................................. */
 }
@@ -971,9 +1028,6 @@ nav > ul > li > a:hover {
 	.footer__info {
 		width: 50%
 	}
-	.footer__social {
-		margin: 0 auto;
-	}
 	.footer__craft {
 		margin: 0 auto;
 		padding-top: 35px;
@@ -995,7 +1049,7 @@ nav > ul > li > a:hover {
 	}
 	.nav > ul {
 		width: 100%;
-		height: 100vh;
+		height: 100%;
 		padding: 0;
 		flex-direction: column;
 		flex-wrap: wrap;
