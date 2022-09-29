@@ -53,7 +53,6 @@ let _item3 = document.querySelector('.item3');
 
 let gridChange = () => {
 	if (window.innerWidth <= 960) {
-		_grid.insertBefore(_grid6, _grid5);
 
 		// change paragraph height if they are not equal
 		if (_item2__text.clientHeight > _item3__text.clientHeight) {
