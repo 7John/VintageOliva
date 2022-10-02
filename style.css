@@ -626,7 +626,7 @@ nav > ul > li > a:hover {
 }
 
 .footer__social {
-	margin: 0 auto;
+	margin: -120px;
 	width: 138px;
 	display: flex;
 	align-items: center;
